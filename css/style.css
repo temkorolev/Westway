@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/* Fonts
+   1. font-family: 'Poppins', sans-serif;
+*/
+
+*,*::before, *::after {
+   box-sizing: border-box;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #F6F6F6;
+   margin: 0;
+   padding: 0;
+}
+nav ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+}
+nav li {
+   margin: 0 3px;
+}
+nav li:last-child {
+   margin-left: 16px;
+}
+a {text-decoration: none;}
+
+nav a {
+   display: block;
+   border-radius: 30%;
+   text-decoration: none;
+   color: #969696;
+}
+h1 {
+   font-size: 30px;
+   color: #fff;
+   font-weight: 700;
+}
+h2 {
+   font-size: 30px;
+   color: #FF7000;
+}
+
+/* HEADER */
+.header {
+   width: 100%;
+   min-height: 60px;
+   background-color: #f5d53e;
+   border-radius: 0 0 15px 15px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 5;
+}
+.headerBox {
+   min-height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+   display: inline-flex;
+}
+.logo a:hover {
+   text-decoration: none;
+}
+.logo span {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.5em;
+   font-weight: 300;
+   color: #999696;
+}
+.iconSearch {
+   display: block;
+   width: 39px;
+   height: 39px;
+   background-color: #fff;
+   padding: 12px;
+   fill: #FF7000;
+   border-radius: 10px;
+}
+.Icon {
+   display: block;
+   width: 47px;
+   height: 47px;
+   background-color: #fff;
+   padding: 7px;
+   fill: #FF7000;
+   border-radius: 10px;
+}
+.iconActive {
+   fill: #26d01d;
+}
+
+/* INTRO */
+.intro {
+   margin-top: 80px;
+   width: 100%;
+   min-height: 60vh;
+}
+.introBox {
+   margin-bottom: 5px;
+   width: 100%;
+   min-height: 60vh;
+   display: flex;
+   justify-content: space-between;
+}
+.introContent {
+   position: relative;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   width: 30%;
+   height: auto;
+   background-color: #cd260f;
+   border-radius: 20px 0 0 20px;
+   box-shadow: 0px -5px 5px -3px rgba(34, 60, 80, 0.6);
+}
+.contentInner {
+   position: relative;
+   padding: 20px 5px;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   text-align: center;
+   border-radius: 20px 0 0 20px;
+}
+.contentInner p {
+   font-size: 20px;
+   font-weight: 700;
+   color: #FF7000;
+}
+.contentInner p:first-child {
+   padding: 0 10px;
+   font-weight: 400;
+   border: 3px solid #FF7000;
+   border-radius: 11px 0 0 11px;
+   color: #fff;
+   font-weight: 700;
+}
+/*.contentInner span {
+   font-size: 24px;
+   font-weight: 700;
+   color: #fff;
+   background-color: #0ab334;
+   padding: 0 10px;
+   border-radius: 10px 0 0 10px;
+}*/
+.introBanner {
+   width: 70%;
+   height: auto;
+   background-color: yellow;
+   border-radius: 0 20px 20px 0;
+   background: url(../img/banner2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   box-shadow: 0px -5px 5px -3px rgba(34, 60, 80, 0.6);
+}
+.introBanner img {
+   display: block;
+   width: 100%;
+   border-radius: 0 20px 20px 0;
+}
+
+/* INFORMATION */
+.information {
+   margin-top: 10px;
+   margin-bottom: 30px;
+   width: 100%;
+   min-height: 100px;
+}
+.informationBox {
+   padding: 14px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   height: auto;
+   background-color: #f5d53e;
+   border-radius: 20px;
+   box-shadow: 0px 5px 5px -2px rgba(34, 60, 80, 0.6);
+}
+.infoBadge {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.badgeBox {
+   width: 50%;
+   display: flex;
+   justify-content: space-around;
+}
+.subtitle {
+   margin-right: 10px;
+}
+.subtitle p {
+   font-size: 13px;
+   margin-bottom: 10px;
+}
+.name {
+   font-size: 14px;
+   font-weight: 600;
+}
+.infoBadge img {
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+}
+.contentBagde {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* POPULAR */
+.popular {
+   margin-top: 20px;
+   margin-bottom: 30px;
+   width: 100%;
+   min-height: 300px;
+}
+.popularBox {
+   margin: 20px 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.popularCards {
+   margin-bottom: 15px;
+   width: 32%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: auto;
+   background-color: #dedcdc;
+   border-radius: 20px;
+   box-shadow: -5px -5px 7px -5px rgba(34, 60, 80, 0.6);
+}
+.descriptionCards {
+   padding: 7px 1px;
+   width: 100%;
+}
+.popularCards img {
+   width: 100%;
+   border-radius: 20px;
+}
+.popularPrice span {
+   font-size: 18px;
+   font-weight: 700;
+   color: #FF7000;
+}
+.descriptionCards p:first-child {
+   font-weight: 700;
+   margin: 0;
+}
+.contentAdd {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.iconAdd {
+   display: block;
+   width: 35px;
+   height: 35px;
+   padding: 7px;
+   fill: #FF7000;
+}
+#plus {
+   fill: #26d01d;
+}
+/* COMMENTS */
+.comments {
+   margin-top: 20px;
+   width: 100%;
+   height: auto;
+}
+.commentsBox {
+   margin: 20px 0;
+   width: 100%;
+}
+.cardBox {
+   margin: 10px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.comments-card {
+   position: relative;
+   margin: 0 14px;
+   padding: 20px;
+   width: 24%;
+   height: auto;
+   background-color: yellow;
+   border-radius: 20px;
+   box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
+}
+.comments-card img {
+   margin: 10px auto;
+   display: block;
+   width: 30%;
+   border-radius: 10px;
+}
+.comments-card p {
+   margin-bottom: 0;
+}
+.names {
+   font-size: 16px;
+   font-weight: 700;
+   text-align: center;
+   margin: 10px 0;
+}
+.comments-card p::before {
+   content: "\201D";
+   background-color: #FF7000;
+   position: absolute;
+   padding: 0 10px;
+   top: -10px;
+   left: 30px;
+   margin: 0;
+   font-size: 30px;
+   color: yellow;
+}
+
+
+/* PRESENTS */
+.presentsBox {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+.presents {
+   width: 100%;
+   min-height: 300px;
+   height: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px 0;
+}
+.presentsMap {
+   width: 53%;
+}
+.maps {
+   border: 1px solid #f5d53e;
+   border-radius: 20px;
+   width: 100%;
+   height: 320px;
+}
+.innerDesc {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   height: auto;
+   background-color: #f5d53e;
+   border-radius: 20px;
+   padding: 18px;
+}
+.formDiscount {
+   display: flex;
+   flex-direction: column;
+}
+ .formDiscont .btn {
+   margin-left: 0;
+}
+
+/* FOOTER */
+.footer {
+   margin-top: 30px;
+   width: 100%;
+   min-height: 70px;
+   background-color: #f5d53e;
+   border-radius: 30px 30px 0px 0px;
+}
+.footerBox {
+   width: 100%;
+   min-height: 70px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.footerContent {
+   display: flex;
+   justify-content: space-between;
+}
+.footerContent p {
+   margin: 0;
+   font-size: 16px;
+}
+.footerContent p:first-child {
+   font-weight: 700;
+}
+.footerContent img {
+   width: 43px;
+   height: 43px;
+   margin-right: 10px;
+}
+.footerContent a {
+   margin-left: 10px;
+}
+.contentSocial {
+   display: flex;
+   justify-content: space-between;
+}
+.contentUser #call {
+   fill: #d0d922;
+}
+
+/* FORM */
+form {
+   display: flex;
+   align-items: center;
+}
+input[type="search"] {
+   width: 170px;
+   height: 37px;
+   box-sizing: border-box;
+   border: none;
+   border-radius: 10px;
+}
+button[type="submit"] {
+   margin-left: 7px;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+input:focus {
+  background-color: #ececec;
+}
+input[placeholder] {
+   padding-left: 10px;
+   font-size: 12px;
+   color: #999696;
+   outline: none;
+}
+
+/* ANIMATIONS */
+.iconsAnim:hover  {
+    animation: 1200ms ease 0s normal none 1 running shake;
+}
+@keyframes shake {
+   0%  {transform: rotateZ(0deg);}
+   10% {transform: rotateZ(-30deg);}
+   20% {transform: rotateZ(15deg);}
+   30% {transform: rotateZ(-10deg);}
+   40% {transform: rotateZ(7.5deg);}
+   50% {transform: rotateZ(-6deg);}
+   60% {transform: rotateZ(5deg);}
+   70% {transform: rotateZ(-4.28571deg);}
+   80% {transform: rotateZ(3.75deg);}
+   90% {transform: rotateZ(-3.33333deg);}
+   100% {transform: rotateZ(0deg);}
+}
+.pulseAnim:hover {
+   animation: 1500ms ease 0s normal none 1 running pulse;
+}
+@keyframes pulse {
+   0% {transform: scaleX(1) scaleY(1);}
+   10% {transform: scaleX(0.85) scaleY(0.85);}
+   20% {transform: scaleX(1) scaleY(1);}
+   30% {transform: scaleX(0.85) scaleY(0.85);}
+   40% {transform: scaleX(1) scaleY(1);}
+   50% {transform: scaleX(0.85) scaleY(0.85);}
+   60% {transform: scaleX(1) scaleY(1);}
+   70% {transform: scaleX(0.85) scaleY(0.85);}
+   80% {transform: scaleX(1) scaleY(1);}
+   90% {transform: scaleX(0.85) scaleY(0.85);}
+   100% {transform: scaleX(1) scaleY(1);}
+}
+.slideRight{
+   animation-name: slideRight;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   visibility: visible;
+}
+@keyframes slideRight {
+   0% {transform: translateX(-150%);}
+   50%{transform: translateX(8%);}
+   65%{transform: translateX(-4%);}
+   80%{transform: translateX(4%);}
+   95%{transform: translateX(-2%);}
+   100% {transform: translateX(0%);}
+}
+.slideLeft{
+   animation-name: slideLeft;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   visibility: visible;
+}
+@keyframes slideLeft {
+   0% {transform: translateX(150%);}
+   50%{transform: translateX(-8%);}
+   65%{transform: translateX(4%);}
+   80%{transform: translateX(-4%);}
+   95%{transform: translateX(2%);}
+   100% {transform: translateX(0%);}
+}
+@keyframes pulseCheck {
+   0% {transform: scaleX(1) scaleY(1);}
+   20% {transform: scaleX(1) scaleY(1);}
+   90% {transform: scaleX(0.99) scaleY(0.99);}
+   100% {transform: scaleX(1) scaleY(1);}
+}
+.tossing{
+   animation-name: tossing;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes tossing {
+   0% {transform: rotate(-2deg);}
+   50% {transform: rotate(2deg);}
+   100% {transform: rotate(-2deg);}
+}
+.fadeIn{
+   animation-name: fadeIn;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   visibility: visible;
+}
+@keyframes fadeIn {
+   0% {
+        transform: scale(0);
+        opacity: 0.0;}
+   60% {
+        transform: scale(1.1);}
+   80% {
+        transform: scale(0.9);
+        opacity: 1;}
+   100% {
+        transform: scale(1);
+        opacity: 1;}
+}
+.pulse1{
+    animation-name: pulse1;
+    -webkit-animation-name: pulse1;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+.scale {
+   display: inline-block; /* Строчно-блочный элемент */
+   overflow: hidden; /* Скрываем всё за контуром */
+  }
+  .scale img {
+   transition: 1s; /* Время эффекта */
+   display: block; /* Убираем небольшой отступ снизу */
+  }
+  .scale img:hover {
+   transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Большие девайсы (большие десктопы, >= 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   .badgeBox {
+      width: 100%;
+      justify-content: space-around;
+   }
+   .introContent {
+      position: relative;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      width: 40%;
+      height: auto;
+   }
+}
+
+/* // Средние девайсы («таблетки», >= 768px)  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .intro {
+      margin-top: 80px;
+      width: 100%;
+      min-height: 40vh;
+   }
+   .introBox {
+      width: 100%;
+      min-height: 40vh;
+   }
+   .introContent {
+      padding: 20px;
+      width: 40%;
+      height: auto;
+   }
+   .popularCards {
+      margin-bottom: 25px;
+   }
+   .badgeBox {
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 5px;
+   }
+   .infoBadge p {
+      margin-bottom: 5px;
+   }
+   .popularCards {
+      width: 48%;
+   }
+   input[type="search"] {
+      width: 150px;
+      height: 37px;
+      box-sizing: border-box;
+   }
+   .footerSocial {
+      display: none;
+   }
+}
+
+/* // Малые девайсы («ландшафтные», >= 575px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .popularCards {
+      width: 100%;
+   }
+   .headerBox form {
+      display: none;
+   }
+   .intro {
+      margin-top: 80px;
+      width: 100%;
+      min-height: 30vh;
+   }
+   .introBox {
+      width: 100%;
+      min-height: 30vh;
+   }
+   .introContent {
+      width: 40%;
+      height: auto;
+      padding: 20px;
+   }
+   .contentInner p:first-child {
+      display: none;
+   }
+   .badgeBox {
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 5px;
+   }
+   .infoBadge img {
+      width: 40px;
+      height: 40px;
+   }
+   .popularCards {
+      margin-bottom: 25px;
+   }
+   .infoBadge p {
+      margin-bottom: 5px;
+   }
+   .footerSocial {
+      display: none;
+   }
+   .footerBox {
+      justify-content: center;
+   }
+   .footerContent {
+      margin: 10px;
+   }
+   .comments-card {
+      position: relative;
+      margin: 14px;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      background-color: yellow;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
+   }
+   .cardBox {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .presentsMap {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 20px;
+   }
+   .job
+}
+/* Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media (max-width: 575.98px) {
+   .headerBox {
+      min-height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .logo {
+      display: none;
+   }
+   .headerBox form {
+      display: none;
+   }
+   ul{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+   }
+   .intro {
+      min-height: 50vh;
+      margin-top: 80px;
+      width: 100%;
+
+   }
+   .introBox {
+      min-height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+   .introContent {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-radius: 20px 20px 0 0;
+   }
+   .introBanner {
+      width: 100%;
+      height: 300px;
+      border-radius: 0 0 20px 20px;
+   }
+   .popularCards {
+      width: 100%;
+   }
+   .presentsBox {
+      display: flex;
+      flex-direction: column;
+   }
+   .presentsMap {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+   .jobs {
+      display: none;
+   }
+   .footerBox {
+      justify-content: center;
+   }
+   .footerContent {
+      margin: 10px;
+   }
+   .comments-card {
+      position: relative;
+      margin: 14px;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      background-color: yellow;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
+   }
+   .cardBox {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+}
