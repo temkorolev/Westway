@@ -2,7 +2,9 @@
 /* Fonts
    1. font-family: 'Poppins', sans-serif;
 */
-
+html, body {
+   height: 100%;
+}
 *,*::before, *::after {
    box-sizing: border-box;
 }
@@ -10,7 +12,9 @@
    margin: 0;
    padding: 0;
 }
-
+.wrapper {
+   min-height: 100%;
+}
 body {
    font-family: 'Poppins', sans-serif;
    background-color: #F6F6F6;
@@ -132,7 +136,7 @@ h2 {
    align-content: center;
    width: 30%;
    height: auto;
-   background-color: #82bd2d;
+   background-color: #f02929;
    border-radius: 20px 0 0 20px;
    box-shadow: 0px -5px 5px -3px rgba(34, 60, 80, 0.6);
 }
@@ -150,7 +154,7 @@ h2 {
 .contentInner p {
    font-size: 20px;
    font-weight: 700;
-   color: #FF7000;
+   color: #fff;
 }
 .contentInner p:first-child {
    padding: 0 10px;
@@ -160,20 +164,12 @@ h2 {
    color: #fff;
    font-weight: 700;
 }
-/*.contentInner span {
-   font-size: 24px;
-   font-weight: 700;
-   color: #fff;
-   background-color: #0ab334;
-   padding: 0 10px;
-   border-radius: 10px 0 0 10px;
-}*/
 .introBanner {
    width: 70%;
    height: auto;
    background-color: yellow;
    border-radius: 0 20px 20px 0;
-   background: url(../img/banner5.jpg);
+   background: url(../img/banner2.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -307,7 +303,6 @@ h2 {
    display: flex;
    justify-content: center;
 }
-
 .comments-card {
    position: relative;
    margin: 0 14px;
@@ -321,7 +316,7 @@ h2 {
 .comments-card img {
    margin: 10px auto;
    display: block;
-   width: 30%;
+   width: 40%;
    border-radius: 10px;
 }
 .comments-card p {
@@ -337,14 +332,17 @@ h2 {
    content: "\201D";
    background-color: #FF7000;
    position: absolute;
-   padding: 0 10px;
+   padding:  10px;
    top: -10px;
    left: 30px;
    margin: 0;
-   font-size: 30px;
+   font-size: 40px;
    color: yellow;
 }
-
+.text {
+   margin: auto;
+   width: 50%;
+}
 
 /* PRESENTS */
 .presentsBox {
@@ -594,9 +592,6 @@ input[placeholder] {
    transform: scale(1.2); /* Увеличиваем масштаб */
   }
 
-
-
-
 /* MEDIA QUERIES */
 
 /* Большие девайсы (большие десктопы, >= 992px) */
@@ -616,7 +611,7 @@ input[placeholder] {
    }
 }
 
-/* // Средние девайсы («таблетки», >= 768px)  */
+/*  Средние девайсы («таблетки», >= 768px)  */
 @media (min-width: 768px) and (max-width: 991.98px) {
    .intro {
       margin-top: 80px;
@@ -656,7 +651,7 @@ input[placeholder] {
    }
 }
 
-/* // Малые девайсы («ландшафтные», >= 575px) */
+/*  Малые девайсы («ландшафтные», >= 575px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
    .popularCards {
       width: 100%;
@@ -726,7 +721,10 @@ input[placeholder] {
       margin-bottom: 20px;
       margin-right: 20px;
    }
-   .job
+   .text {
+      margin: auto;
+      width: 80%;
+   }
 }
 /* Экстрамалые девайсы («портретные телефоны», < 576px) */
 @media (max-width: 575.98px) {
@@ -751,7 +749,6 @@ input[placeholder] {
       min-height: 50vh;
       margin-top: 80px;
       width: 100%;
-
    }
    .introBox {
       min-height: 50vh;
@@ -826,7 +823,8 @@ input[placeholder] {
    nav li {
       margin: 0 2px;
    }
-   .bg-2 {
-      display: none;
+   .text {
+      margin: auto;
+      width: 80%;
    }
 }

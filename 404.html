@@ -8,87 +8,87 @@
    <meta name="keywords" content="Westway, page 404, oops">
    <meta name="author" content="Artem Korolev">
    <link rel="stylesheet" href="css/page.css">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="shortcut icon" href="img/pizza.ico" type="image/x-icon">
    <title>Page not found</title>
 </head>
 <body>
-   <div class="container">
-      <!-- HEADER -->
-      <header class="header">
-         <div class="container-fluid">
-            <div class="headerBox">
-               <div class="logo">
-                  <a href="index.html"><span>Westway</span></a>
-               </div>
-               <form action="/search" method="POST">
-                  <input type="search" id="search" placeholder="Ваши вкусы">
-                  <button type="submit" title="Search">
-                     <svg class="pulseAnim iconSearch">
-                        <use xlink:href="#searchBtn"></use>
-                     </svg>
-                  </button>
-               </form><!-- /form -->
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="index.html" title="Home">
-                           <svg class="iconsAnim Icon iconActive">
-                              <use xlink:href="#house"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="pizza.html" title="Pizza">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#slice"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="burgers.html" title="Burgers">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#burger"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="asian.html" title="Asian">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#rise"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="cocktails.html" title="Cocktails">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#frappe"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="shop.html" title="Cart-shop">
-                           <svg class="pulseAnim Icon">
-                              <use xlink:href="#shopping"></use>
-                           </svg>
-                        </a>
-                     </li>
-                  </ul><!-- /ul -->
-               </nav><!-- /nav -->
-            </div><!-- /headerBox -->
-         </div><!-- /container-->
-      </header>
+   <!-- HEADER -->
+   <header class="header">
+      <div class="container-fluid">
+         <div class="headerBox">
+            <div class="logo">
+               <a href="index.html"><span>Westway</span></a>
+            </div>
+            <form action="/search" method="POST">
+               <input type="search" id="search" placeholder="Ваши вкусы">
+               <button type="submit" title="Search">
+                  <svg class="pulseAnim iconSearch">
+                     <use xlink:href="#searchBtn"></use>
+                  </svg>
+               </button>
+            </form><!-- /form -->
+            <nav>
+               <ul>
+                  <li>
+                     <a href="index.html" title="Home">
+                        <svg class="iconsAnim Icon">
+                           <use xlink:href="#house"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="pizza.html" title="Pizza">
+                        <svg class="iconsAnim Icon">
+                           <use xlink:href="#slice"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="burgers.html" title="Burgers">
+                        <svg class="iconsAnim Icon">
+                           <use xlink:href="#burger"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="asian.html" title="Asian">
+                        <svg class="iconsAnim Icon">
+                           <use xlink:href="#rise"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="cocktails.html" title="Cocktails">
+                        <svg class="iconsAnim Icon">
+                           <use xlink:href="#frappe"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="shop.html" title="Cart-shop">
+                        <svg class="pulseAnim Icon">
+                           <use xlink:href="#shopping"></use>
+                           <div class="bg-2">2</div>
+                        </svg>
+                     </a>
+                  </li>
+               </ul><!-- /ul -->
+            </nav><!-- /nav -->
+         </div><!-- /headerBox -->
+      </div><!-- /container-->
+   </header>
 
       <!-- NOT FOUND -->
       <div class="found">
          <div class="innerLost">
-         <img src="img/page404.png" alt="">
-         <img class="lost" src="img/rocket.png" alt="">
+
+         <img class="introImg" src="img/pizza.png" alt="">
          <div class="content">
-            <h1>Oops!</h1>
-            <h3>Page not Found</h3>
-            <a href="index.html">Go home</a>
+            <h3>Страница не найдена</h3>
+            <a href="index.html">Вернуться на главную страницу</a>
          </div>
       </div>
       </div>
@@ -96,7 +96,7 @@
 
    <!-- FOOTER -->
 <footer class="footer">
-   <div class="container-fluid px-5">
+   <div class="container-fluid">
       <div class="footerBox">
          <!-- footerContent -->
          <div class="footerContent">

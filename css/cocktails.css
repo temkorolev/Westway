@@ -1,4 +1,14 @@
-
+.introBanner {
+   width: 70%;
+   height: auto;
+   background-color: yellow;
+   border-radius: 0 20px 20px 0;
+   background: url(../img/bev1.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   box-shadow: 0px -5px 5px -3px rgba(34, 60, 80, 0.6);
+}
 .popular {
    margin: 30px 0;
    width: 100%;
