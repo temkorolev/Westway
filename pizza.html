@@ -9,12 +9,12 @@
    <link rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="shortcut icon" href="img/pizza.ico" type="image/x-icon">
-   <title>Пицца</title>
+   <title>Westway - пицца</title>
 </head>
 <body>
    <!-- HEADER -->
    <header class="header">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
          <div class="headerBox">
             <div class="logo">
                <a href="index.html"><span>Westway</span></a>
@@ -68,6 +68,7 @@
                      <a href="shop.html" title="Cart-shop">
                         <svg class="pulseAnim Icon">
                            <use xlink:href="#shopping"></use>
+                           <div class="bg-2">2</div>
                         </svg>
                      </a>
                   </li>
@@ -79,13 +80,13 @@
 
    <!-- INTRO -->
    <section class="intro">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
          <div class="introBox">
             <div class="introContent">
                <div class="contentInner">
-                  <h1>Скидка 20%</h1>
-                  <p>На все пиццы!</p>
-                  <p>Успей порадовать близких</p>
+                  <h1 class="pulse1">Скидка на все пиццы 25%</h1>
+                  <p>Каждую пятницу!</p>
+                  <!-- <span>275 грн</span> -->
                </div>
             </div><!-- /introContent-->
             <div class="introBanner">
@@ -97,12 +98,13 @@
 
    <!-- POPULAR -->
    <section class="popular">
-      <div class="container-fluid px-5">
+      <div class="container-fluid">
          <h2>Пицца</h2>
          <div class="popularBox">
             <div class="popularCards">
-               <div class="cardImg"></div>
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner1.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Маргарита"</p>
@@ -119,7 +121,9 @@
                </div><!-- /descriptionCards-->
             </div><!-- /popularCards-->
             <div class="popularCards">
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner5.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Неаполитанская"</p>
@@ -137,7 +141,9 @@
                </div><!-- /descriptionCards-->
             </div><!-- /popularCards-->
             <div class="popularCards">
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner3.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Маринара"</p>
@@ -154,7 +160,9 @@
                </div><!-- /descriptionCards-->
             </div><!-- /popularCards-->
             <div class="popularCards">
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner4.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Пульезе"</p>
@@ -172,7 +180,9 @@
                </div><!-- /descriptionCards-->
             </div><!-- /popularCards-->
             <div class="popularCards">
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner9.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Дьябола"</p>
@@ -190,7 +200,9 @@
                </div><!-- /descriptionCards-->
             </div><!-- /popularCards-->
             <div class="popularCards">
-               <img src="img/banner.jpg" alt="">
+               <div class="popimg scale">
+                  <img src="img/banner8.jpg" alt="">
+               </div>
                <div class="descriptionCards">
                   <div class="contentAdd">
                      <p>Пицца "Четыре Сыра"</p>
@@ -213,52 +225,52 @@
 
    <!-- FOOTER -->
    <footer class="footer">
-      <div class="container-fluid px-5">
-         <div class="footerBox">
-            <!-- footerContent -->
-            <div class="footerContent">
-               <img src="img/person.png" alt="">
-               <div class="contentUser">
-                  <p>Анна Кравец</p>
-                  <p>Быстрый заказ</p>
-               </div>
+   <div class="container-fluid px-5">
+      <div class="footerBox">
+         <!-- footerContent -->
+         <div class="footerContent">
+            <img src="img/person.png" alt="">
+            <div class="contentUser">
+               <p>Анна Кравец</p>
+               <p>Быстрый заказ</p>
+            </div>
+            <a href="tel:+38(888)-888-88-88">
+               <svg class="pulseAnim Icon">
+                  <use xlink:href="#call"></use>
+               </svg>
+            </a>
+         </div>
+         <!-- footerContent -->
+         <div class="footerContent jobs">
+            <img src="img/job.svg" alt="">
+            <div class="contentUser">
+               <p>Вакансии</p>
+               <p>Курьер / администратор</p>
+            </div>
+            <a href="tel:+38(888)-724-88-88">
+               <svg class="pulseAnim Icon">
+                  <use xlink:href="#call"></use>
+               </svg>
+            </a>
+         </div>
+         <!-- footerContent -->
+         <div class="footerContent footerSocial">
+            <img src="img/media.svg" alt="">
+            <div class="contentSocial">
                <a href="#">
                   <svg class="pulseAnim Icon">
-                     <use xlink:href="#call"></use>
+                     <use xlink:href="#google"></use>
                   </svg>
                </a>
-            </div>
-            <!-- footerContent -->
-            <div class="footerContent">
-               <img src="img/job.svg" alt="">
-               <div class="contentUser">
-                  <p>Вакансии</p>
-                  <p>Курьер / администратор</p>
-               </div>
                <a href="#">
                   <svg class="pulseAnim Icon">
-                     <use xlink:href="#call"></use>
+                     <use xlink:href="#facebook"></use>
                   </svg>
                </a>
-            </div>
-            <!-- footerContent -->
-            <div class="footerContent">
-               <img src="img/media.svg" alt="">
-               <div class="contentSocial">
-                  <a href="#">
-                     <svg class="pulseAnim Icon">
-                        <use xlink:href="#google"></use>
-                     </svg>
-                  </a>
-                  <a href="#">
-                     <svg class="pulseAnim Icon">
-                        <use xlink:href="#facebook"></use>
-                     </svg>
-                  </a>
-               </div><!-- /contentSocial -->
-            </div><!-- /footerContent -->
-         </div><!-- /footerBox -->
-      </div><!-- /container -->
+            </div><!-- /contentSocial -->
+         </div><!-- /footerContent -->
+      </div><!-- /footerBox -->
+   </div><!-- /container -->
    </footer>
 
    <!-- MODAL ADD -->

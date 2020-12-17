@@ -5,6 +5,9 @@
    width: 100%;
    min-height: 500px;
 }
+.favorites h2 {
+   margin-top: 80px;
+}
 .favoritesBox {
    margin: 20px 0;
    width: 100%;
@@ -52,4 +55,22 @@
 }
 .favoritesPromo .price{
    font-weight: 700;
+}
+@media (max-width: 575.98px) {
+
+
+   .favoritesInner {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .favoritesContent {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
 }

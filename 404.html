@@ -17,7 +17,7 @@
    <div class="container">
       <!-- HEADER -->
       <header class="header">
-         <div class="container-fluid px-5">
+         <div class="container-fluid">
             <div class="headerBox">
                <div class="logo">
                   <a href="index.html"><span>Westway</span></a>
@@ -25,7 +25,7 @@
                <form action="/search" method="POST">
                   <input type="search" id="search" placeholder="Ваши вкусы">
                   <button type="submit" title="Search">
-                     <svg class="iconSearch">
+                     <svg class="pulseAnim iconSearch">
                         <use xlink:href="#searchBtn"></use>
                      </svg>
                   </button>
@@ -33,42 +33,42 @@
                <nav>
                   <ul>
                      <li>
-                        <a class="active" href="index.html" title="Home">
+                        <a href="index.html" title="Home">
                            <svg class="iconsAnim Icon iconActive">
                               <use xlink:href="#house"></use>
                            </svg>
                         </a>
                      </li>
                      <li>
-                        <a href="#" title="Cocktails">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#frappe"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#" title="Asian">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#rise"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#" title="Burgers">
-                           <svg class="iconsAnim Icon">
-                              <use xlink:href="#burger"></use>
-                           </svg>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#" title="Pizza">
+                        <a href="pizza.html" title="Pizza">
                            <svg class="iconsAnim Icon">
                               <use xlink:href="#slice"></use>
                            </svg>
                         </a>
                      </li>
                      <li>
-                        <a href="#modal" title="Cart-shop">
+                        <a href="burgers.html" title="Burgers">
+                           <svg class="iconsAnim Icon">
+                              <use xlink:href="#burger"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="asian.html" title="Asian">
+                           <svg class="iconsAnim Icon">
+                              <use xlink:href="#rise"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="cocktails.html" title="Cocktails">
+                           <svg class="iconsAnim Icon">
+                              <use xlink:href="#frappe"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="shop.html" title="Cart-shop">
                            <svg class="pulseAnim Icon">
                               <use xlink:href="#shopping"></use>
                            </svg>
@@ -95,26 +95,54 @@
    </div>
 
    <!-- FOOTER -->
-   <footer>
-      <div class="inner">
-         <div class="box">
-            <a href="#">
-               <svg class="Icon">
-                  <use xlink:href="#google"></use>
-               </svg>
-            </a>
-            <a href="#">
-               <svg class="Icon">
-                  <use xlink:href="#facebook"></use>
-               </svg>
-            </a>
-            <div class="person">
-               <p class="desc">Don’t have an account?</p>
-               <a href=""><span>Register</span></a>
+<footer class="footer">
+   <div class="container-fluid px-5">
+      <div class="footerBox">
+         <!-- footerContent -->
+         <div class="footerContent">
+            <img src="img/person.png" alt="">
+            <div class="contentUser">
+               <p>Анна Кравец</p>
+               <p>Быстрый заказ</p>
             </div>
+            <a href="tel:+38(888)-888-88-88">
+               <svg class="pulseAnim Icon">
+                  <use xlink:href="#call"></use>
+               </svg>
+            </a>
          </div>
-      </div>
-   </footer>
+         <!-- footerContent -->
+         <div class="footerContent jobs">
+            <img src="img/job.svg" alt="">
+            <div class="contentUser">
+               <p>Вакансии</p>
+               <p>Курьер / администратор</p>
+            </div>
+            <a href="tel:+38(888)-724-88-88">
+               <svg class="pulseAnim Icon">
+                  <use xlink:href="#call"></use>
+               </svg>
+            </a>
+         </div>
+         <!-- footerContent -->
+         <div class="footerContent footerSocial">
+            <img src="img/media.svg" alt="">
+            <div class="contentSocial">
+               <a href="#">
+                  <svg class="pulseAnim Icon">
+                     <use xlink:href="#google"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg class="pulseAnim Icon">
+                     <use xlink:href="#facebook"></use>
+                  </svg>
+               </a>
+            </div><!-- /contentSocial -->
+         </div><!-- /footerContent -->
+      </div><!-- /footerBox -->
+   </div><!-- /container -->
+</footer>
 
 
    <!-- SPRITES -->
